@@ -10,6 +10,7 @@
 body{
     font-family: Manrope, sans-serif;
     overflow-x: hidden;
+    position: relative;
 }
 p, a{
     margin: 0;
@@ -17,6 +18,8 @@ p, a{
 }
 .container{
     position: relative;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 /*INDEX CSS*/
 
