@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/loader.css">
+
+    <link rel="stylesheet" href="../assets/css/forum/sidebar.css">
+    <link rel="stylesheet" href="../assets/css/forum/market.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="loader">
+
+    <span>↓</span>
+    <span style="--delay: 0.1s">↓</span>
+    <span style="--delay: 0.3s">↓</span>
+    <span style="--delay: 0.4s">↓</span>
+    <span style="--delay: 0.5s">↓</span>
+
+</div>
+<div class="content d-none">
+    <button class="totop btn d-none">
+        <img src="../assets/images/double-up.png" alt="">
+    </button>
+    <!--HEADER-->
+    <section class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="../index.html" class="d-flex text-reset" style="text-decoration: none;">
+                    <img src="../assets/images/logo.png" class="logo__icon">
+                    <p class="logo__text">Pinkod-shop</p>
+                </a>
+            </div>
+            <div class="header__link">
+                <a href="blog.html" class="link__item">Форум</a>
+                <a href="../blog.html" class="link__item">Блог</a>
+                <a href="../shop.html" class="link__item">Магазин</a>
+                <a href="../contacts.html" class="link__item">Контакты</a>
+            </div>
+            <div class="header__button">
+                <a href="auth.html"><button type="button" class="button__register">Регистрация</button></a>
+                <a href="auth.html"><button type="button" class="button__login">Войти</button></a>
+            </div>
+            <!--            <a class="header__account account account__button">-->
+            <!--                <p class="account__name">Тимофей</p>-->
+            <!--                <img src="assets/images/ava.jpeg" alt="avatar" class="account__image">-->
+            <!--            </a>-->
+            <img src="../assets/images/burger.svg" class="header__burger">
+            <img src="../assets/images/cross.svg" class="header__cross d-none">
+        </div>
+    </section>
+    <div class="container account account__toggle d-none">
+        <div class="account__drop">
+            <a href="#" class="drop__item">Мой профиль</a>
+            <div class="line"></div>
+            <a href="#" class="drop__item">Баланс: 10р</a>
+            <a href="#" class="drop__item">Баллов: 40р</a>
+            <div class="line"></div>
+            <a href="#" class="drop__item">Мой профиль</a>
+        </div>
+    </div>
+    <div class="slider__menu">
+        <div class="menu__container">
+            <a href="../index.html" class="menu__item">Главная</a>
+            <a href="blog.html" class="menu__item">Форум</a>
+            <a href="../blog.html" class="menu__item">Блог</a>
+            <a href="../shop.html" class="menu__item">Магазин</a>
+            <a href="../contacts.html" class="menu__item">Контакты</a>
+            <a href="../auth.html" style="margin-top: 6px;"><button type="button" class="button__register">Регистрация</button></a>
+            <a href="../auth.html" style="margin-top: 6px;"><button type="button" class="button__login">Войти</button></a>
+            <!--            <p class="link__item profile">Профиль <img src="assets/images/arrow.svg" alt="" class="profile__arrow"></p>-->
+            <!--            <div class="profile__dropdown d-none">-->
+            <!--                <a href="#" class="dropdown__item">Мой профиль</a>-->
+            <!--                <a href="#" class="dropdown__item">Баланс: 10р</a>-->
+            <!--                <a href="#" class="dropdown__item">Баллов: 40р</a>-->
+            <!--                <a href="#" class="dropdown__item">Мой профиль</a>-->
+            <!--            </div>-->
+        </div>
+    </div>
+    <!--END HEADER-->
+    <div class="slider__sidebar">
+        <div class="sidebar__button"><img src="../assets/images/right.png" alt=""></div>
+        <div class="col-12 sidebar__content">
+            <div class="sidebar__card">
+                <p class="card__title">Маркет</p>
+                <div class="card__line"></div>
+                <ul class="card__links">
+                    <a href="blog-create.html" class="button__a"><button class="links__button">Создать предложение</button></a>
+                    <a href="market.html" class="links__item links__active">Товары</a>
+                    <a href="market-myproducts.html" class="links__item">Мои товары</a>
+                    <a href="market-mybuys.html" class="links__item">Мои покупки</a>
+                </ul>
+                <div class="card__line" style="margin-top: 0;"></div>
+                <ul class="card__links">
+                    <a href="../contacts.html" class="links__item">Предложить идею</a>
+                    <a href="../contacts.html" class="links__item">Сообщить о баге</a>
+                    <a href="../contacts.html" class="links__item">Новости сайта</a>
+                </ul>
+            </div>
+            <div class="sidebar__card">
+                <p class="card__title">Аккаунт</p>
+                <div class="card__line"></div>
+                <ul class="card__links">
+                    <p class="links__item">Баланс <span>0₽</span></p>
+                    <a href="market-addbalance.html" class="links__item">Пополнить баланс</a>
+                    <a href="market-withdraw.html" class="links__item">Вывести средства</a>
+                    <a href="market-transfer.html" class="links__item">Перевести деньги</a>
+                </ul>
+            </div>
+            <div class="sidebar__card">
+                <p class="card__title">Навигация</p>
+                <div class="card__line"></div>
+                <ul class="card__links">
+                    <a href="blog.html" class="links__item">Обсуждения</a>
+                    <a href="market.html" class="links__item">Маркет</a>
+                    <a href="#" class="links__item">Правила форума</a>
+                    <a href="https://t.me/awarmata" class="links__item">Канал в телеграмме</a>
+                </ul>
+            </div>
+            <div class="sidebar__card">
+                <p class="card__title">Реклама</p>
+                <div class="card__line"></div>
+                <img src="../assets/images/money.png" alt="" class="card__banner">
+            </div>
+        </div>
+    </div>
+
+    <main class="main container">
+        <div class="main__sidebar col-3">
+            <div class="sidebar__card">
+                <p class="card__title">Маркет</p>
+                <div class="card__line"></div>
+                <ul class="card__links">
+                    <a href="blog-create.html" class="button__a"><button class="links__button">Создать предложение</button></a>
+                    <a href="market.html" class="links__item links__active">Товары</a>
+                    <a href="market-myproducts.html" class="links__item">Мои товары</a>
+                    <a href="market-mybuys.html" class="links__item">Мои покупки</a>
+                </ul>
+                <div class="card__line" style="margin-top: 0;"></div>
+                <ul class="card__links">
+                    <a href="../contacts.html" class="links__item">Предложить идею</a>
+                    <a href="../contacts.html" class="links__item">Сообщить о баге</a>
+                    <a href="../contacts.html" class="links__item">Новости сайта</a>
+                </ul>
+            </div>
+            <div class="sidebar__card">
+                <p class="card__title">Аккаунт</p>
+                <div class="card__line"></div>
+                <ul class="card__links">
+                    <p class="links__item">Баланс <span>0₽</span></p>
+                    <a href="market-addbalance.html" class="links__item">Пополнить баланс</a>
+                    <a href="market-withdraw.html" class="links__item">Вывести средства</a>
+                    <a href="market-transfer.html" class="links__item">Перевести деньги</a>
+                </ul>
+            </div>
+            <div class="sidebar__card">
+                <p class="card__title">Навигация</p>
+                <div class="card__line"></div>
+                <ul class="card__links">
+                    <a href="blog.html" class="links__item">Обсуждения</a>
+                    <a href="market.html" class="links__item">Маркет</a>
+                    <a href="#" class="links__item">Правила форума</a>
+                    <a href="https://t.me/awarmata" class="links__item">Канал в телеграмме</a>
+                </ul>
+            </div>
+            <div class="sidebar__card">
+                <p class="card__title">Реклама</p>
+                <div class="card__line"></div>
+                <img src="../assets/images/money.png" alt="" class="card__banner">
+            </div>
+        </div>
+        <div class="main__content col-12 col-lg-9">
+            <p class="content__title">Маркет</p>
+            <div class="content__categories">
+                <a href="#" class="categories__card"><img src="../assets/images/warfare%20logo.svg" alt=""></a>
+                <a href="#" class="categories__card"><img src="../assets/images/warfare%20logo.svg" alt=""></a>
+                <a href="#" class="categories__card"><img src="../assets/images/warfare%20logo.svg" alt=""></a>
+                <a href="#" class="categories__card"><img src="../assets/images/warfare%20logo.svg" alt=""></a>
+                <a href="#" class="categories__card"><img src="../assets/images/warfare%20logo.svg" alt=""></a>
+                <a href="#" class="categories__card"><img src="../assets/images/warfare%20logo.svg" alt=""></a>
+                <a href="#" class="categories__card"><img src="../assets/images/warfare%20logo.svg" alt=""></a>
+                <a href="#" class="categories__card"><img src="../assets/images/warfare%20logo.svg" alt=""></a>
+                <a href="#" class="categories__card"><img src="../assets/images/warfare%20logo.svg" alt=""></a>
+                <a href="#" class="categories__card"><img src="../assets/images/warfare%20logo.svg" alt=""></a>
+                <a href="#" class="categories__card"><img src="../assets/images/warfare%20logo.svg" alt=""></a>
+                <a href="#" class="categories__card"><img src="../assets/images/warfare%20logo.svg" alt=""></a>
+                <a href="#" class="categories__card"><img src="../assets/images/warfare%20logo.svg" alt=""></a>
+            </div>
+            <div class="content__title d-flex justify-content-between">
+                <div class="flex">
+                    <select name="filter" class="content__select">
+                        <option value="date">По дате создания</option>
+                        <option value="comments">По комментариям</option>
+                    </select>
+                    <div>
+                        <input type="text" class="content__from" placeholder="Цена от" maxlength="5">
+                        <input type="text" class="content__to" placeholder="Цена до" maxlength="5">
+                    </div>
+                    <button class="content__button">Найти</button>
+                </div>
+            </div>
+            <div class="cards">
+
+                <a href="market-card.html" class="content__link">
+                    <div class="content__card">
+                        <div class="card__info">
+                            <div class="info__title">
+                                <div class="d-flex">
+                                    <div class="title__text">Название товара</div>
+                                    <div style="text-decoration: none;" class="title__read">Прочитано</div>
+                                </div>
+                                <div class="title__price">1190₽</div>
+                            </div>
+                            <div class="info__params">
+                                <object data="" type=""><a href=""><img src="../assets/images/warfare%20logo.svg" alt="" class="params__category"></a></object>
+                                <object data="" type=""><a href="" class="params__name">Ник пользователя</a></object>
+                                <date class="params__date">21 июня 2020</date>
+                                <div class="params__comments"><img src="../assets/images/chat.png" alt="">10</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <section class="footer">
+        <div class="container footer__container">
+            <div class="footer__logo">
+                <div class="logo__main">
+                    <img src="../assets/images/logo.png" alt="" class="main__image">
+                    <p class="main__text">Pinkod-shop</p>
+                </div>
+                <p class="logo__texts">
+                    @2020-2021 Pinkod-shop
+                    Все права защищены.
+                </p>
+            </div>
+            <div class="footer__contacts col-2">
+                <p class="contacts__title" style="cursor: pointer;">Контакты: <span style="font-size: 14px;">(клик)</span></p>
+                <div class="contacts__info d-none">
+                    <p style="color: #7D7D7D;" class="info__item">
+                        Раздзиевский <br>
+                        Денис <br>
+                        Витальевич <br>
+                    </p>
+                    <p style="color: #7D7D7D;" class="info__item">
+                        ИНН: <br>
+                        263505154805
+                    </p>
+                    <p style="color: #7D7D7D;" class="info__item">
+                        Telegram: <br>
+                        DenVit26
+                    </p>
+                    <p style="color: #7D7D7D;" class="info__item">
+                        Email: <br>
+                        vit26@wmid.com
+                    </p>
+                </div>
+            </div>
+            <div class="footer__about col-2">
+                <p class="about__title">О магазине:</p>
+                <div class="about__info">
+                    <a href="#" class="info__item">
+                        О нас
+                    </a>
+                    <a href="#" class="info__item">
+                        Горантии
+                    </a>
+                    <a href="#" class="info__item">
+                        Доставка и оплата
+                    </a>
+                    <a href="#" class="info__item">
+                        Условия возврата
+                    </a>
+                    <a href="#" class="info__item">
+                        В случае обмана
+                    </a>
+                    <a href="#" class="info__item">
+                        Отзывы
+                    </a>
+                    <a href="#" class="info__item">
+                        Соглашения
+                    </a>
+                </div>
+            </div>
+            <div class="footer__services col-2">
+                <p class="services__title">Сервисы:</p>
+                <div class="services__info">
+                    <a href="#" class="info__item">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="#" class="info__item">
+                        Блог
+                    </a>
+                    <a href="#" class="info__item">
+                        Магазин
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END FOOTER-->
+</div>
+
+<script src="../assets/js/jquery-3.6.0.min.js"></script>
+<script src="../assets/js/menu.js"></script>
+<script src="../assets/js/forum/sidebar.js"></script>
+<script src="../assets/js/footer.js"></script>
+<script src="../assets/js/scroll.js"></script>
+<script src="../assets/js/loader.js"></script>
+
+</body>
+</html>

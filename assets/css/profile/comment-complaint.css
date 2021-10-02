@@ -1,0 +1,125 @@
+.main{
+    padding: 24px 0;
+}
+.main__title{
+    font-weight: bold;
+    font-size: 26px;
+}
+.main__flex{
+    display: flex;
+    margin-top: 34px;
+}
+.flex__nav{
+    display: flex;
+    flex-direction: column;
+}
+.nav__item{
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 3px;
+}
+.nav__item:last-child{
+    margin-bottom: 0;
+}
+.nav__active{
+    font-weight: bold;
+}
+
+.flex__content{
+    background: #FFFFFF;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    padding: 14px 26px;
+}
+.content__title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.title__name{
+    font-weight: 500;
+    font-size: 22px;
+}
+.title__complaint{
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.complaint__input{
+    background: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+    padding-left: 13px;
+    outline: none;
+    margin-bottom: 10px;
+}
+.complaint__input::placeholder{
+    font-weight: 500;
+}
+.info__text{
+    font-weight: bold;
+}
+.complaint__button{
+    margin-top: 10px;
+}
+.button__send{
+    padding: 0 40px;
+    height: 36px;
+    border: 1px solid #CFCFCF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: #ffffff;
+    font-weight: bold;
+
+    transition: 0.3s all;
+    margin-right: 10px;
+}
+.button__send:hover{
+    background: #aaaaaa;
+}
+.button__back{
+    padding: 0 24px;
+    height: 36px;
+    border-radius: 8px;
+    color: #ffffff;
+    background: #007AFF;
+    border: none;
+    font-weight: bold;
+
+    transition: 0.3s all;
+    margin-right: 10px;
+}
+.button__back:hover{
+    background: #1b4778;
+}
+
+@media screen and (max-width: 767px) {
+    .main__flex{
+        flex-direction: column;
+    }
+    .flex__nav{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 520px){
+    .info__text{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 480px){
+    .button__send{
+        margin-bottom: 10px;
+        padding: 0;
+        width: 100%;
+    }
+}

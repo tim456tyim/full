@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/shop-card.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="content">
+    <button class="totop btn d-none">
+        <img src="assets/images/double-up.png" alt="">
+    </button>
+    <!--HEADER-->
+    <section class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="../index.html" class="d-flex text-reset" style="text-decoration: none;">
+                    <img src="assets/images/logo.png" class="logo__icon">
+                    <p class="logo__text">Pinkod-shop</p>
+                </a>
+            </div>
+            <div class="header__link">
+                <a href="forum/blog.html" class="link__item">Форум</a>
+                <a href="blog.html" class="link__item">Блог</a>
+                <a href="shop.html" class="link__item">Магазин</a>
+                <a href="contacts.html" class="link__item">Контакты</a>
+            </div>
+            <!--            <div class="header__button">-->
+            <!--                <a href="auth.html"><button type="button" class="button__register">Регистрация</button></a>-->
+            <!--                <a href="auth.html"><button type="button" class="button__login">Войти</button></a>-->
+            <!--            </div>-->
+
+            <div class="header__field">
+
+                <a href="#" class="header__account account account__button">
+                    <img src="assets/images/ava.png" alt="" class="account__avatar">
+                    <span class="account__info">
+                    <p class="name">Тимофей</p>
+                    <p class="balance">Баланс: <span>0р</span></p>
+                </span>
+                </a>
+
+                <div class="header__cart">
+                    <img src="assets/images/shopping-bag.png" alt="" class="cart__image">
+                    <span class="cart__counter">1</span>
+                </div>
+
+            </div>
+
+            <img src="assets/images/burger.svg" class="header__burger">
+            <img src="assets/images/cross.svg" class="header__cross d-none">
+        </div>
+    </section>
+
+    <div class="cart__slider">
+        <p class="cart__title">Корзина</p>
+        <div class="cart__cards">
+
+            <a href="#" class="cart__item">
+                <img src="assets/images/pc.png" alt="" class="product__image">
+                <div class="product__text">
+                    <p class="product__title">Настольный пк 1212 тест название</p>
+                    <p class="product__price">899р</p>
+                </div>
+                <object>
+                    <a href="#">
+                        <img src="assets/images/close.png" alt="" class="product__delete">
+                    </a>
+                </object>
+            </a>
+
+
+        </div>
+    </div>
+
+    <div class="slider__menu">
+        <div class="menu__container">
+            <a href="index.html" class="menu__item">Главная</a>
+            <a href="forum/blog.html" class="menu__item">Форум</a>
+            <a href="blog.html" class="menu__item">Блог</a>
+            <a href="shop.html" class="menu__item">Магазин</a>
+            <a href="contacts.html" class="menu__item">Контакты</a>
+            <p class="link__item profile">Профиль <img src="assets/images/arrow.svg" alt="" class="profile__arrow"></p>
+            <div class="profile__dropdown d-none">
+                <a href="#" class="dropdown__item">Мой профиль</a>
+                <a href="#" class="dropdown__item">Баланс: 10р</a>
+                <a href="#" class="dropdown__item">Баллов: 40р</a>
+                <a href="#" class="dropdown__item">Мой профиль</a>
+            </div>
+        </div>
+    </div>
+    <!--END HEADER-->
+    <main class="main">
+        <div class="container d-flex">
+            <div class="col-6">
+                <div class="image__block">
+                    <img src="assets/images/pc.png" alt="product" class="product__image">
+                    <div class="take__image">
+                        <div class="image__item"><img src="assets/images/case.png" alt="product" class="item__image"></div>
+                        <div class="image__item"><img src="assets/images/pc.png" alt="product" class="item__image"></div>
+                        <div class="image__item"><img src="assets/images/pc.png" alt="product" class="item__image"></div>
+                        <div class="image__item"><img src="assets/images/pc.png" alt="product" class="item__image"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="main__block">
+                    <p class="title">Название продукта ыаыаыа ы а ыаиырвоаыол ралоыр лоарвлр ларыолра лоралоыр лораывр алыврлары</p>
+                    <div class="product__card">
+                        <div class="card__head">
+                            <p class="head__price">899р</p>
+                            <div class="head__text">
+                                <p class="text__rate">Рейтинг 87%</p>
+                                <a href="complaints.html" class="complaints__link">Отзывы</a>
+                            </div>
+                        </div>
+                        <div class="card__options">
+                            <p class="options__key">Параметр - <span class="options__value">свсойство</span></p>
+                            <p class="options__key">Параметр - <span class="options__value">свсойство</span></p>
+                            <p class="options__key">Параметр - <span class="options__value">свсойство</span></p>
+                        </div>
+                        <div class="card__buttons">
+                            <button class="buttons__buy">Купить</button>
+                            <button class="buttons__add-to-cart">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <div class="more__buttons">
+                            <button class="buttons__description col-4 buttons__active">Описание</button>
+                            <button class="buttons__info col-4">Доп. инфо</button>
+                        </div>
+                        <p class="more__description">Текст описания ытшгрша ыр гаршыгр ашыр ары гра ырп ропыроап ыралрыа гыащзцо ащзызщ ыш оашыо щшаыд раоврыо лраыло рлоаыр воларыолвралофрдаорф длар рфа гшщрф гшар шгрфшг аршгфар шгфр агшрфшг ршгф ршгар цгш рашгф ршагр шрфша ршгра шграр  р графрар долырващро смшщоргщш ррыр ар</p>
+                        <p class="more__info d-none">fq fqe frferf jehf ugwuyfg ougqfoug fouyeqg ioywqg iyqweg weqg wefqg yfweq gyggqwf og oeg efg qef gfoqe gqewfiu fgpqwei hfpi uh uqwhf hqwepuhp hu h ph pwfehpfoh uhw uweqh uewh upewf hpqewfh uhfewq hehp hqw</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <section class="footer">
+        <div class="container footer__container">
+            <div class="footer__logo">
+                <div class="logo__main">
+                    <img src="assets/images/logo.png" alt="" class="main__image">
+                    <p class="main__text">Pinkod-shop</p>
+                </div>
+                <p class="logo__texts">
+                    @2020-2021 Pinkod-shop
+                    Все права защищены.
+                </p>
+            </div>
+            <div class="footer__contacts col-2">
+                <p class="contacts__title" style="cursor: pointer;">Контакты: <span style="font-size: 14px;">(клик)</span></p>
+                <div class="contacts__info d-none">
+                    <p style="color: #7D7D7D;" class="info__item">
+                        Раздзиевский <br>
+                        Денис <br>
+                        Витальевич <br>
+                    </p>
+                    <p style="color: #7D7D7D;" class="info__item">
+                        ИНН: <br>
+                        263505154805
+                    </p>
+                    <p style="color: #7D7D7D;" class="info__item">
+                        Telegram: <br>
+                        DenVit26
+                    </p>
+                    <p style="color: #7D7D7D;" class="info__item">
+                        Email: <br>
+                        vit26@wmid.com
+                    </p>
+                </div>
+            </div>
+            <div class="footer__about col-2">
+                <p class="about__title">О магазине:</p>
+                <div class="about__info">
+                    <a href="#" class="info__item">
+                        О нас
+                    </a>
+                    <a href="#" class="info__item">
+                        Горантии
+                    </a>
+                    <a href="#" class="info__item">
+                        Доставка и оплата
+                    </a>
+                    <a href="#" class="info__item">
+                        Условия возврата
+                    </a>
+                    <a href="#" class="info__item">
+                        В случае обмана
+                    </a>
+                    <a href="#" class="info__item">
+                        Отзывы
+                    </a>
+                    <a href="#" class="info__item">
+                        Соглашения
+                    </a>
+                </div>
+            </div>
+            <div class="footer__services col-2">
+                <p class="services__title">Сервисы:</p>
+                <div class="services__info">
+                    <a href="#" class="info__item">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="#" class="info__item">
+                        Блог
+                    </a>
+                    <a href="#" class="info__item">
+                        Магазин
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END FOOTER-->
+</div>
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/footer.js"></script>
+<script src="assets/js/scroll.js"></script>
+<script src="assets/js/shop-card.js"></script>
+
+</body>
+</html>

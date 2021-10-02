@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/profile/home-safity.css">
+    <link rel="stylesheet" href="../assets/css/loader.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="loader">
+
+    <span>↓</span>
+    <span style="--delay: 0.1s">↓</span>
+    <span style="--delay: 0.3s">↓</span>
+    <span style="--delay: 0.4s">↓</span>
+    <span style="--delay: 0.5s">↓</span>
+
+</div>
+<div class="content d-none">
+    <button class="totop btn d-none">
+        <img src="../assets/images/double-up.png" alt="">
+    </button>
+    <!--HEADER-->
+    <section class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="../index.html" class="d-flex text-reset" style="text-decoration: none;">
+                    <img src="../assets/images/logo.png" class="logo__icon">
+                    <p class="logo__text">Pinkod-shop</p>
+                </a>
+            </div>
+            <div class="header__link">
+                <a href="../forum/blog.html" class="link__item">Форум</a>
+                <a href="../blog.html" class="link__item">Блог</a>
+                <a href="../shop.html" class="link__item">Магазин</a>
+                <a href="../contacts.html" class="link__item">Контакты</a>
+            </div>
+            <!--            <div class="header__button">-->
+            <!--                <a href="auth.html"><button type="button" class="button__register">Регистрация</button></a>-->
+            <!--                <a href="auth.html"><button type="button" class="button__login">Войти</button></a>-->
+            <!--            </div>-->
+            <a class="header__account account account__button">
+                <p class="account__name">Тимофей</p>
+                <img src="../assets/images/ava.jpeg" alt="avatar" class="account__image">
+            </a>
+            <img src="../assets/images/burger.svg" class="header__burger">
+            <img src="../assets/images/cross.svg" class="header__cross d-none">
+        </div>
+    </section>
+    <div class="container account account__toggle d-none">
+        <div class="account__drop">
+            <a href="#" class="drop__item">Мой профиль</a>
+            <div class="line"></div>
+            <a href="#" class="drop__item">Баланс: 10р</a>
+            <a href="#" class="drop__item">Баллов: 40р</a>
+            <div class="line"></div>
+            <a href="#" class="drop__item">Мой профиль</a>
+        </div>
+    </div>
+    <div class="slider__menu">
+        <div class="menu__container">
+            <a href="../index.html" class="menu__item">Главная</a>
+            <a href="../forum/blog.html" class="menu__item">Форум</a>
+            <a href="../blog.html" class="menu__item">Блог</a>
+            <a href="../shop.html" class="menu__item">Магазин</a>
+            <a href="../contacts.html" class="menu__item">Контакты</a>
+            <!--            <a href="../auth.html" style="margin-top: 6px;"><button type="button" class="button__register">Регистрация</button></a>-->
+            <!--            <a href="../auth.html" style="margin-top: 6px;"><button type="button" class="button__login">Войти</button></a>-->
+            <p class="link__item profile">Профиль <img src="../assets/images/arrow.svg" alt="" class="profile__arrow"></p>
+            <div class="profile__dropdown d-none">
+                <a href="#" class="dropdown__item">Мой профиль</a>
+                <a href="#" class="dropdown__item">Баланс: 10р</a>
+                <a href="#" class="dropdown__item">Баллов: 40р</a>
+                <a href="#" class="dropdown__item">Мой профиль</a>
+            </div>
+        </div>
+    </div>
+    <!--END HEADER-->
+    <main class="main">
+        <div class="container">
+            <p class="main__title">Профиль пользователя</p>
+            <div class="main__flex">
+                <div class="flex__nav col-12 col-md-3">
+                    <a href="home.html" class="nav__item">Личные данные</a>
+                    <a href="home-mybuys.html" class="nav__item">Мои покупки</a>
+                    <a href="home-safity.html" class="nav__item nav__active">Безовасность и пароль</a>
+                    <a href="home-reviews.html" class="nav__item">Отзывы</a>
+                </div>
+                <div class="flex__content col-12 col-md-9">
+                    <div class="content__container">
+                        <div class="content__title">
+                            <p class="title__name">Безопасность и пароль</p>
+                        </div>
+                        <form action="#" method="post" class="content__password">
+                            <p class="password__title">Смена пароля</p>
+                            <input type="text" class="password__input" placeholder="Старый пароль">
+                            <input type="text" class="password__input" placeholder="Новый пароль">
+                            <input type="text" class="password__input" placeholder="Подтверждение пароля">
+                            <button class="password__button" type="submit">Сохранить</button>
+                        </form>
+                        <form action="#" method="post" class="content__reset">
+                            <p class="reset__title">Смена пароля по почте</p>
+                            <button class="reset__button" type="submit">Отправить заявку</button>
+                        </form>
+                    </div>
+                    <div class="content__line"></div>
+                    <div class="content__container">
+                        <div class="content__safity">
+                            <p class="safity__title">Безопасность аккаунта</p>
+                            <div class="safity__auth">
+                                <div id="1" class="auth__card">
+                                    <img src="../assets/images/system/windows.svg" alt="" class="card__logo">
+                                    <div class="card__content">
+                                        <p class="content__title">Windows, Браузер Chrome</p>
+                                        <p class="content__sub">Сегодня в 189:18 | Москва, Россия</p>
+                                    </div>
+                                </div>
+                                <div id="2" class="auth__card">
+                                    <img src="../assets/images/system/linux.svg" alt="" class="card__logo">
+                                    <div class="card__content">
+                                        <p class="content__title">Linux, Браузер FireFox</p>
+                                        <p class="content__sub">Сегодня в 11:18 | Москва, Россия</p>
+                                    </div>
+                                </div>
+                                <div id="3" class="auth__card">
+                                    <img src="../assets/images/system/android.svg" alt="" class="card__logo">
+                                    <div class="card__content">
+                                        <p class="content__title">Android, Браузер Chrome</p>
+                                        <p class="content__sub">Сегодня в 15:18 | Красноярск, Россия</p>
+                                    </div>
+                                </div>
+                                <div id="4" class="auth__card">
+                                    <img src="../assets/images/system/apple.svg" alt="" class="card__logo">
+                                    <div class="card__content">
+                                        <p class="content__title">IPhone, Браузер Safari</p>
+                                        <p class="content__sub">Сегодня в 14:18 | Заволожск, Россия</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="auth__off" href="#">Завершить все сеансы</a>
+                        </div>
+                    </div>
+                    <div class="content__line"></div>
+                    <div class="content__container">
+                        <div class="content__delete">
+                            <p class="delete__title">Действия с аккаунтом</p>
+                            <div class="delete__map">
+                                <img src="../assets/images/trash.svg" alt="" class="map__image">
+                                <div class="map__text">
+                                    <p class="text__title">Удаление аккаунта с сервиса pinkod-shop</p>
+                                    <p class="text__sub">Вы можете удалить аккаунт с нашего сервиса, данные в нем, баланс и вся информация будет полностью анулированна.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <section class="footer">
+        <div class="container footer__container">
+            <div class="footer__logo">
+                <div class="logo__main">
+                    <img src="../assets/images/logo.png" alt="" class="main__image">
+                    <p class="main__text">Pinkod-shop</p>
+                </div>
+                <p class="logo__texts">
+                    @2020-2021 Pinkod-shop
+                    Все права защищены.
+                </p>
+            </div>
+            <div class="footer__contacts col-2">
+                <p class="contacts__title" style="cursor: pointer;">Контакты: <span style="font-size: 14px;">(клик)</span></p>
+                <div class="contacts__info d-none">
+                    <p style="color: #7D7D7D;" class="info__item">
+                        Раздзиевский <br>
+                        Денис <br>
+                        Витальевич <br>
+                    </p>
+                    <p style="color: #7D7D7D;" class="info__item">
+                        ИНН: <br>
+                        263505154805
+                    </p>
+                    <p style="color: #7D7D7D;" class="info__item">
+                        Telegram: <br>
+                        DenVit26
+                    </p>
+                    <p style="color: #7D7D7D;" class="info__item">
+                        Email: <br>
+                        vit26@wmid.com
+                    </p>
+                </div>
+            </div>
+            <div class="footer__about col-2">
+                <p class="about__title">О магазине:</p>
+                <div class="about__info">
+                    <a href="#" class="info__item">
+                        О нас
+                    </a>
+                    <a href="#" class="info__item">
+                        Горантии
+                    </a>
+                    <a href="#" class="info__item">
+                        Доставка и оплата
+                    </a>
+                    <a href="#" class="info__item">
+                        Условия возврата
+                    </a>
+                    <a href="#" class="info__item">
+                        В случае обмана
+                    </a>
+                    <a href="#" class="info__item">
+                        Отзывы
+                    </a>
+                    <a href="#" class="info__item">
+                        Соглашения
+                    </a>
+                </div>
+            </div>
+            <div class="footer__services col-2">
+                <p class="services__title">Сервисы:</p>
+                <div class="services__info">
+                    <a href="#" class="info__item">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="#" class="info__item">
+                        Блог
+                    </a>
+                    <a href="#" class="info__item">
+                        Магазин
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END FOOTER-->
+</div>
+
+<div class="auth__modal d-none">
+    <div class="modal__card">
+        <div class="card__title">
+            <p class="title__name" style="margin-bottom: 0;">Информация о входе</p>
+            <img src="../assets/images/cross-replace.svg" alt="" class="title__img">
+        </div>
+        <div class="card__basic">
+            <div class="basic__group">
+                <p class="group__label">Место</p>
+                <p class="group__text">Россия, Москва</p>
+            </div>
+            <div class="basic__group">
+                <p class="group__label">Время</p>
+                <p class="group__text">Сегодня в 19:20</p>
+            </div>
+            <div class="basic__group">
+                <p class="group__label">Приложение</p>
+                <p class="group__text">Браузер Chrome</p>
+            </div>
+            <div class="basic__group">
+                <p class="group__label">IP-адрес</p>
+                <p class="group__text">127.0.0.1</p>
+            </div>
+        </div>
+        <a href="#" class="card__off">Завершить сеанс</a>
+    </div>
+</div>
+
+<script src="../assets/js/jquery-3.6.0.min.js"></script>
+<script src="../assets/js/menu.js"></script>
+<script src="../assets/js/footer.js"></script>
+<script src="../assets/js/scroll.js"></script>
+<script src="../assets/js/loader.js"></script>
+
+<script>
+    $(document).ready(function (){
+        var button = $('.auth__card');
+        var modal = $('.auth__modal');
+
+        var off = $('.card__off');
+
+        button.click(function (){
+            $('body').addClass('overflow');
+            modal.removeClass('d-none');
+
+            var id = $(this).attr('id');
+            off.attr('href', 'laravel-api/' + id)
+        })
+
+        var cross = $('.title__img');
+
+        cross.click(function (){
+            modal.addClass('d-none');
+            $('body').removeClass('overflow');
+        })
+
+        $(document).click(function (e) {
+            if ($(e.target).is('.auth__modal')) {
+                closeModal();
+            }
+        });
+
+        function closeModal(){
+            $('.auth__modal').addClass('d-none');
+            $('body').removeClass('overflow');
+        }
+    })
+</script>
+
+</body>
+</html>

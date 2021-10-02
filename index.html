@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="content">
+    <button class="totop btn d-none">
+        <img src="assets/images/double-up.png" alt="">
+    </button>
+    <!--HEADER-->
+    <section class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="../index.html" class="d-flex text-reset" style="text-decoration: none;">
+                    <img src="assets/images/logo.png" class="logo__icon">
+                    <p class="logo__text">Pinkod-shop</p>
+                </a>
+            </div>
+            <div class="header__link">
+                <a href="forum/blog.html" class="link__item">Форум</a>
+                <a href="blog.html" class="link__item">Блог</a>
+                <a href="shop.html" class="link__item">Магазин</a>
+                <a href="contacts.html" class="link__item">Контакты</a>
+            </div>
+<!--            <div class="header__button">-->
+<!--                <a href="auth.html"><button type="button" class="button__register">Регистрация</button></a>-->
+<!--                <a href="auth.html"><button type="button" class="button__login">Войти</button></a>-->
+<!--            </div>-->
+
+            <div class="header__field">
+
+                <a href="#" class="header__account account account__button">
+                    <img src="assets/images/ava.png" alt="" class="account__avatar">
+                    <span class="account__info">
+                    <p class="name">Тимофей</p>
+                    <p class="balance">Баланс: <span>0р</span></p>
+                </span>
+                </a>
+
+                <div class="header__cart">
+                    <img src="assets/images/shopping-bag.png" alt="" class="cart__image">
+                    <span class="cart__counter">1</span>
+                </div>
+
+            </div>
+
+            <img src="assets/images/burger.svg" class="header__burger">
+            <img src="assets/images/cross.svg" class="header__cross d-none">
+        </div>
+    </section>
+
+    <div class="cart__slider">
+        <p class="cart__title">Корзина</p>
+        <div class="cart__cards">
+
+            <a href="#" class="cart__item">
+                <img src="assets/images/pc.png" alt="" class="product__image">
+                <div class="product__text">
+                    <p class="product__title">Настольный пк 1212 тест название</p>
+                    <p class="product__price">899р</p>
+                </div>
+                <object>
+                    <a href="#">
+                        <img src="assets/images/close.png" alt="" class="product__delete">
+                    </a>
+                </object>
+            </a>
+
+
+        </div>
+    </div>
+
+    <div class="slider__menu">
+        <div class="menu__container">
+            <a href="index.html" class="menu__item">Главная</a>
+            <a href="forum/blog.html" class="menu__item">Форум</a>
+            <a href="blog.html" class="menu__item">Блог</a>
+            <a href="shop.html" class="menu__item">Магазин</a>
+            <a href="contacts.html" class="menu__item">Контакты</a>
+                        <p class="link__item profile">Профиль <img src="assets/images/arrow.svg" alt="" class="profile__arrow"></p>
+                        <div class="profile__dropdown d-none">
+                            <a href="#" class="dropdown__item">Мой профиль</a>
+                            <a href="#" class="dropdown__item">Баланс: 10р</a>
+                            <a href="#" class="dropdown__item">Баллов: 40р</a>
+                            <a href="#" class="dropdown__item">Мой профиль</a>
+                        </div>
+        </div>
+    </div>
+    <!--END HEADER-->
+    <main class="main">
+        <!--        CATEGORIES-->
+        <section class="categories container">
+            <p class="categories__title">Категории</p>
+            <div class="categories__big">
+                <a href="#" class="big__armored">
+                    <img src="assets/images/armored.png" alt="">
+                    <p class="armored__text">ARMORED WARFARE</p>
+                </a>
+                <a href="#" class="big__warface">
+                    <img src="assets/images/warface.png" alt="">
+                    <p class="warface__text">PIN WARFACE</p>
+                </a>
+            </div>
+            <div class="categories__small">
+                <a href="#" class="small__gift">
+                    <img src="assets/images/gift%201.png" alt="">
+                    <p class="gift__text">Подарки</p>
+                </a>
+                <a href="#" class="small__money">
+                    <img src="assets/images/money.png" alt="">
+                    <p class="gift__text">Подарки</p>
+                </a>
+                <a href="#" class="small__vip">
+                    <img src="assets/images/vip.png" alt="">
+                    <p class="gift__text">Подарки</p>
+                </a>
+            </div>
+        </section>
+        <!--        END CATEGORIES-->
+
+        <!--        MINI SHOP-->
+        <section class="mini__shop container">
+            <div class="shop__button">
+                <button class="button__armored active">Armored Warfare</button>
+                <button class="button__warface">Pin Warface</button>
+            </div>
+            <div class="shop__items row" id="armored">
+                <div class="card">
+                    <p class="card__status">Хит продаж</p>
+                    <div class="card__main">
+                        <div class="card__img">
+                            <img src="assets/images/case.png" alt="" class="card__image">
+                        </div>
+                        <div class="card__text">
+                            <p class="text__title">Платиновый контейнер: 5шт</p>
+                            <div class="text__properties">
+                                <li class="properties">Игра - <span>ARMORED WARFARE</span></li>
+                                <li class="properties">Категория - <span>Подарки</span></li>
+                                <li class="properties">Тип - <span>На заказ</span></li>
+                            </div>
+                            <p class="text__shortDescription">Краткое описание товара в виде пары строк, лучший выбор для проекта Армата!</p>
+                            <div class="text__price">
+                                <p class="price__main">890р</p>
+                                <div style="position: relative;">
+                                    <p class="price__sale">1190р</p>
+                                    <div class="line-driver"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__buttons">
+                        <button class="buttons__buy">Купить в 1 клик</button>
+                        <button class="buttons__more">Подробнее</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="card__status">Хит продаж</p>
+                    <div class="card__main">
+                        <div class="card__img">
+                            <img src="assets/images/case.png" alt="" class="card__image">
+                        </div>
+                        <div class="card__text">
+                            <p class="text__title">Платиновый контейнер: 5шт</p>
+                            <div class="text__properties">
+                                <li class="properties">Игра - <span>ARMORED WARFARE</span></li>
+                                <li class="properties">Категория - <span>Подарки</span></li>
+                                <li class="properties">Тип - <span>На заказ</span></li>
+                            </div>
+                            <p class="text__shortDescription">Краткое описание товара в виде пары строк, лучший выбор для проекта Армата!</p>
+                            <div class="text__price">
+                                <p class="price__main">890р</p>
+                                <div style="position: relative;">
+                                    <p class="price__sale">1190р</p>
+                                    <div class="line-driver"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__buttons">
+                        <button class="buttons__buy">Купить в 1 клик</button>
+                        <button class="buttons__more">Подробнее</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="card__status">Хит продаж</p>
+                    <div class="card__main">
+                        <div class="card__img">
+                            <img src="assets/images/case.png" alt="" class="card__image">
+                        </div>
+                        <div class="card__text">
+                            <p class="text__title">Платиновый контейнер: 5шт</p>
+                            <div class="text__properties">
+                                <li class="properties">Игра - <span>ARMORED WARFARE</span></li>
+                                <li class="properties">Категория - <span>Подарки</span></li>
+                                <li class="properties">Тип - <span>На заказ</span></li>
+                            </div>
+                            <p class="text__shortDescription">Краткое описание товара в виде пары строк, лучший выбор для проекта Армата!</p>
+                            <div class="text__price">
+                                <p class="price__main">890р</p>
+                                <div style="position: relative;">
+                                    <p class="price__sale">1190р</p>
+                                    <div class="line-driver"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__buttons">
+                        <button class="buttons__buy">Купить в 1 клик</button>
+                        <button class="buttons__more">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop__items row d-none" id="warface">
+                <div class="card">
+                    <p class="card__status">Хит продаж</p>
+                    <div class="card__main">
+                        <div class="card__img">
+                            <img src="assets/images/case.png" alt="" class="card__image">
+                        </div>
+                        <div class="card__text">
+                            <p class="text__title">Платиновый контейнер: 5шт</p>
+                            <div class="text__properties">
+                                <li class="properties">Игра - <span>ARMORED WARFARE</span></li>
+                                <li class="properties">Категория - <span>Подарки</span></li>
+                                <li class="properties">Тип - <span>На заказ</span></li>
+                            </div>
+                            <p class="text__shortDescription">Краткое описание товара в виде пары строк, лучший выбор для проекта Армата!</p>
+                            <div class="text__price">
+                                <p class="price__main">890р</p>
+                                <div style="position: relative;">
+                                    <p class="price__sale">1190р</p>
+                                    <div class="line-driver"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__buttons">
+                        <button class="buttons__buy">Купить в 1 клик</button>
+                        <button class="buttons__more">Подробнее</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="card__status">Хит продаж</p>
+                    <div class="card__main">
+                        <div class="card__img">
+                            <img src="assets/images/case.png" alt="" class="card__image">
+                        </div>
+                        <div class="card__text">
+                            <p class="text__title">Платиновый контейнер: 5шт</p>
+                            <div class="text__properties">
+                                <li class="properties">Игра - <span>ARMORED WARFARE</span></li>
+                                <li class="properties">Категория - <span>Подарки</span></li>
+                                <li class="properties">Тип - <span>На заказ</span></li>
+                            </div>
+                            <p class="text__shortDescription">Краткое описание товара в виде пары строк, лучший выбор для проекта Армата!</p>
+                            <div class="text__price">
+                                <p class="price__main">890р</p>
+                                <div style="position: relative;">
+                                    <p class="price__sale">1190р</p>
+                                    <div class="line-driver"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__buttons">
+                        <button class="buttons__buy">Купить в 1 клик</button>
+                        <button class="buttons__more">Подробнее</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="card__status">Хит продаж</p>
+                    <div class="card__main">
+                        <div class="card__img">
+                            <img src="assets/images/case.png" alt="" class="card__image">
+                        </div>
+                        <div class="card__text">
+                            <p class="text__title">Платиновый контейнер: 5шт</p>
+                            <div class="text__properties">
+                                <li class="properties">Игра - <span>ARMORED WARFARE</span></li>
+                                <li class="properties">Категория - <span>Подарки</span></li>
+                                <li class="properties">Тип - <span>На заказ</span></li>
+                            </div>
+                            <p class="text__shortDescription">Краткое описание товара в виде пары строк, лучший выбор для проекта Армата!</p>
+                            <div class="text__price">
+                                <p class="price__main">890р</p>
+                                <div style="position: relative;">
+                                    <p class="price__sale">1190р</p>
+                                    <div class="line-driver"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__buttons">
+                        <button class="buttons__buy">Купить в 1 клик</button>
+                        <button class="buttons__more">Подробнее</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="card__status">Хит продаж</p>
+                    <div class="card__main">
+                        <div class="card__img">
+                            <img src="assets/images/case.png" alt="" class="card__image">
+                        </div>
+                        <div class="card__text">
+                            <p class="text__title">Платиновый контейнер: 5шт</p>
+                            <div class="text__properties">
+                                <li class="properties">Игра - <span>ARMORED WARFARE</span></li>
+                                <li class="properties">Категория - <span>Подарки</span></li>
+                                <li class="properties">Тип - <span>На заказ</span></li>
+                            </div>
+                            <p class="text__shortDescription">Краткое описание товара в виде пары строк, лучший выбор для проекта Армата!</p>
+                            <div class="text__price">
+                                <p class="price__main">890р</p>
+                                <div style="position: relative;">
+                                    <p class="price__sale">1190р</p>
+                                    <div class="line-driver"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__buttons">
+                        <button class="buttons__buy">Купить в 1 клик</button>
+                        <button class="buttons__more">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <a href="shop.html"><button class="shop__show">Показать больше</button></a>
+            </div>
+        </section>
+        <!--        END MINI SHOP-->
+
+        <div class="mini__blog">
+            <div class="container blog__wrapper">
+                <p class="blog__title">Новости & Статьи</p>
+                <div class="blog__cards row">
+                    <a href="#" style="text-decoration: none; color: black;" class="cards__blog">
+                        <img src="assets/images/blog.jpeg" class="blog__img">
+                        <p class="blog__date">1 января 2020</p>
+                        <p class="blog__name">Название статьи сайта, например скидки на новые пинкоды</p>
+                    </a>
+                    <a href="#" style="text-decoration: none; color: black;" class="cards__blog">
+                        <img src="assets/images/blog.jpeg" class="blog__img">
+                        <p class="blog__date">1 января 2020</p>
+                        <p class="blog__name">Название статьи сайта, например скидки на новые пинкоды</p>
+                    </a>
+                    <a href="#" style="text-decoration: none; color: black;" class="cards__blog">
+                        <img src="assets/images/blog.jpeg" class="blog__img">
+                        <p class="blog__date">1 января 2020</p>
+                        <p class="blog__name">Название статьи сайта, например скидки на новые пинкоды</p>
+                    </a>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="blog.html"><button class="shop__show">Все публикации</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner container">
+            <div class="banner__line"></div>
+            <div class="banner__texts">
+                <p class="texts__main">Оформить покупку через <span>онлайн чат</span></p>
+                <p class="texts__sub">Отправьте название товара или артикул в онлайн-чат. С вами свяжется
+                    наш менеджер и поможет.</p>
+            </div>
+            <button class="banner__button">Отправить заявку</button>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <section class="footer">
+        <div class="container footer__container">
+            <div class="footer__logo">
+                <div class="logo__main">
+                    <img src="assets/images/logo.png" alt="" class="main__image">
+                    <p class="main__text">Pinkod-shop</p>
+                </div>
+                <p class="logo__texts">
+                    @2020-2021 Pinkod-shop
+                    Все права защищены.
+                </p>
+            </div>
+            <div class="footer__contacts col-2">
+                <p class="contacts__title" style="cursor: pointer;">Контакты: <span style="font-size: 14px;">(клик)</span></p>
+                <div class="contacts__info d-none">
+                    <p style="color: #7D7D7D;" class="info__item">
+                        Раздзиевский <br>
+                        Денис <br>
+                        Витальевич <br>
+                    </p>
+                    <p style="color: #7D7D7D;" class="info__item">
+                        ИНН: <br>
+                        263505154805
+                    </p>
+                    <p style="color: #7D7D7D;" class="info__item">
+                        Telegram: <br>
+                        DenVit26
+                    </p>
+                    <p style="color: #7D7D7D;" class="info__item">
+                        Email: <br>
+                        vit26@wmid.com
+                    </p>
+                </div>
+            </div>
+            <div class="footer__about col-2">
+                <p class="about__title">О магазине:</p>
+                <div class="about__info">
+                    <a href="#" class="info__item">
+                        О нас
+                    </a>
+                    <a href="#" class="info__item">
+                        Горантии
+                    </a>
+                    <a href="#" class="info__item">
+                        Доставка и оплата
+                    </a>
+                    <a href="#" class="info__item">
+                        Условия возврата
+                    </a>
+                    <a href="#" class="info__item">
+                        В случае обмана
+                    </a>
+                    <a href="#" class="info__item">
+                        Отзывы
+                    </a>
+                    <a href="#" class="info__item">
+                        Соглашения
+                    </a>
+                </div>
+            </div>
+            <div class="footer__services col-2">
+                <p class="services__title">Сервисы:</p>
+                <div class="services__info">
+                    <a href="#" class="info__item">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="#" class="info__item">
+                        Блог
+                    </a>
+                    <a href="#" class="info__item">
+                        Магазин
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END FOOTER-->
+</div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/mini-shop.js"></script>
+    <script src="assets/js/footer.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/loader.js"></script>
+
+</body>
+</html>

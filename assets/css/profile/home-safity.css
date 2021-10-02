@@ -1,0 +1,242 @@
+.main{
+    padding: 24px 0;
+}
+.main__title{
+    font-weight: bold;
+    font-size: 26px;
+}
+.main__flex{
+    display: flex;
+    margin-top: 34px;
+}
+.flex__nav{
+    display: flex;
+    flex-direction: column;
+}
+.nav__item{
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 3px;
+}
+.nav__item:last-child{
+    margin-bottom: 0;
+}
+.nav__active{
+    font-weight: bold;
+}
+
+.flex__content{
+    background: #FFFFFF;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.content__container{
+    padding: 14px 26px;
+}
+.content__title{
+    display: flex;
+    justify-content: space-between;
+}
+.title__name{
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.content__line{
+    width: 100%;
+    height: 1px;
+    background: #A1A1A1;
+}
+.content__text{
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.content__password{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+}
+.password__title, .reset__title, .safity__title, .delete__title{
+    font-size: 18px;
+}
+.password__input{
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 14px;
+    padding-left: 13px;
+}
+.password__input::placeholder{
+    font-size: 16px;
+    line-height: 22px;
+}
+.password__button{
+    height: 36px;
+    max-width: 180px;
+    margin-top: 20px;
+    border: 1px solid #CFCFCF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-weight: bold;
+    background: #ffffff;
+    transition: 0.3s all;
+}
+.password__button:hover{
+    background: #aaaaaa;
+}
+
+.reset__button{
+    height: 36px;
+    background: #007AFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    padding: 0 20px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.3s all;
+    margin-top: 6px;
+}
+.reset__button:hover{
+    background: #195292;
+}
+
+
+.content__line{
+    width: 100%;
+    height: 1px;
+    background: #A1A1A1;
+    margin-top: 10px;
+}
+
+.auth__card{
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    border-radius: 10px;
+    padding-left: 11px;
+
+    cursor: pointer;
+    transition: 0.2s all;
+}
+.auth__card:hover{
+    background: rgba(196, 196, 196, 0.5);
+}
+.card__logo{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    object-fit: cover;
+}
+.content__title{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: -6px;
+}
+.content__sub{
+    font-size: 14px;
+    color: #818C99;
+}
+
+@media screen and (max-width: 767px) {
+    .main__flex{
+        flex-direction: column;
+    }
+    .flex__nav{
+        margin-bottom: 20px;
+    }
+}
+
+.auth__modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(160, 160, 160, 0.8);
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.modal__card{
+    width: 520px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    padding: 12px 24px;
+}
+.card__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title__img{
+    cursor: pointer;
+}
+.basic__group{
+    margin: 14px 0;
+}
+.group__label{
+    font-size: 14px;
+    color: #6d7885;
+}
+.card__off{
+    text-decoration: none;
+    color: #e64646;
+}
+
+@media screen and (max-width: 520px) {
+    .auth__modal{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.auth__off{
+    text-decoration: none;
+    color: #e64646;
+    font-weight: 500;
+    transition: 0.2s all;
+}
+.auth__off:hover{
+    color: #9e2929;
+}
+.delete__title{
+    margin-bottom: 20px;
+}
+.delete__map{
+    border-radius: 10px;
+    padding: 15px 18px;
+    display: flex;
+    align-items: flex-start;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.delete__map:hover{
+    background: rgba(196, 196, 196, 0.5);
+}
+.map__image{
+    margin-right: 14px;
+}
+.text__title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.text__sub{
+    max-width: 300px;
+    color: #969696;
+    font-size: 14px;
+}
+
+
+.overflow{
+    overflow-y: hidden;
+}

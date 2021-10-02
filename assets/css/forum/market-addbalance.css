@@ -1,0 +1,131 @@
+.main__content{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    padding: 23px 34px;
+}
+.content__title{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.ways__row{
+    display: flex;
+    margin-bottom: 12px;
+}
+.ways__row:last-child{
+    margin-bottom: 0;
+}
+.ways__card{
+    width: 200px;
+    height: 38px;
+    background: #FFFFFF;
+    border: 1px solid #CECECE;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.3s all;
+    margin-right: 16px;
+}
+.ways__card:hover{
+    transform: scale(1.1);
+}
+.card__img{
+    min-width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.card__text{
+    font-size: 22px;
+}
+.selected{
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    background: #f0f0f0;
+}
+
+.content__field{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.field__label{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.field__input{
+    border: 1px solid #CECECE;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 13px;
+}
+.content__button{
+    margin-top: 20px;
+    width: 254px;
+    height: 34px;
+    background: #228E5D;
+    border-radius: 4px;
+    border: none;
+
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    transition: 0.3s all;
+}
+.content__button:hover{
+    background: #216144;
+}
+
+.field__button{
+    width: 254px;
+    height: 34px;
+    border: none;
+    background: #8B8B8B;
+    border-radius: 4px;
+
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+
+    transition: 0.3s all;
+    margin-top: 14px;
+}
+.field__button:hover{
+    background: #5f5f5f;
+}
+
+@media screen and (max-width: 767px) {
+    .ways__row{
+        flex-direction: column;
+        margin-bottom: 0;
+        margin-right: 16px;
+    }
+    .ways__card{
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .ways__card:last-child{
+        margin-bottom: 0;
+    }
+    .content__ways{
+        display: flex;
+    }
+}
+@media screen and (max-width: 510px){
+    .content__ways{
+        display: flex;
+        flex-direction: column;
+    }
+    .ways__row{
+        margin-right: 0;
+    }
+    .ways__card:last-child{
+        margin-bottom: 12px;
+    }
+}

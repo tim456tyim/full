@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/verification.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+</head>
+<body>
+<div class="loader">
+
+    <span>↓</span>
+    <span style="--delay: 0.1s">↓</span>
+    <span style="--delay: 0.3s">↓</span>
+    <span style="--delay: 0.4s">↓</span>
+    <span style="--delay: 0.5s">↓</span>
+
+</div>
+<div class="content d-none">
+    
+    <div class="verification-card">
+        <div class="alert alert-success">text</div>
+        <p class="card-title">Подтверждение email адреса</p>
+        <p class="card-subtitle">На почту <a href="#">tratratartra@gmail.com</a> была отправлена ссылка на подтверждение почты</p>
+
+        <a href="#" class="card-reset">Отправить ссылку повторно</a>
+
+        <div class="subtitle">
+            <p class="card-trouble">Если у вас возникли проблемы с подтверждением или вы ввели не правильный email адрес:</p>
+            <a href="#" class="card-logout">зарегистрироваться под другим email</a>
+        </div>
+    </div>
+
+</div>
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/footer.js"></script>
+<script src="assets/js/scroll.js"></script>
+<script src="assets/js/loader.js"></script>
+
+<script>
+    $(document).ready(function(){
+        function hide(){
+            $('.alert').hide(500);
+        }
+        setTimeout(hide, 6000);
+
+        function disable(){
+            $.ajax({
+                type:'POST',
+                url:'/reset-time',
+                success:function(data){
+                    if (data == true){
+                        $('.card-reset').attr('href', 'laravel-api/verification-link');
+                    }
+                }
+            })
+        }
+        setTimeout(disable, 1000);
+    })
+</script>
+</body>
+</html>

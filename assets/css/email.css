@@ -1,0 +1,107 @@
+body{
+    background: #F8F8F8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email-card{
+    width: 560px;
+}
+.card-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width: 60px;
+}
+.logo-brand{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 28px;
+    padding: 32px 50px;
+    background: #ffffff;
+}
+.content-title{
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+}
+.content-text{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+.content-button{
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    background: #2788CE;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: 0.3s all;
+}
+.content-button:hover{
+    color: #ababab;
+    background: #22577d;
+}
+
+.card-info{
+    background: #6E6E6E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 50px;
+}
+.info-title{
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.info{
+    list-style-type: none;
+    margin-top: 12px;
+    color: #ffffff;
+    text-align: center;
+}
+ul{
+    padding: 0;
+}
+
+.info-button{
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    background: #41B0B0;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: 0.3s all;
+}
+.info-button:hover{
+    color: #ababab;
+    background: #227d6c;
+}
+
+@media screen and (max-width: 560px) {
+    .email-card{
+        width: 320px;
+    }
+}

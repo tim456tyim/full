@@ -1,0 +1,174 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Roboto;
+}
+.register{
+    width: 550px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+    display: flex;
+    padding: 24px 0;
+
+    flex-direction: column;
+    align-items: center;
+}
+.register-title{
+    font-weight: 400;
+    font-size: 32px;
+    text-align: left;
+    color: #707070;
+    margin-bottom: 0;
+}
+.social{
+    margin: 26px 0;
+}
+.social-item{
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s;
+}
+.google{
+    margin: 0 20px;
+}
+.social-item:hover{
+    transform: scale(1.2);
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 14px;
+    transition: all 0.3s;
+}
+.form-label{
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    color: #707070;
+    position: absolute;
+    left: 76px;
+    margin-bottom: 0;
+    z-index: 2;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+.form-input{
+    width: 100%;
+    height: 56px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #cfcfcf;
+    padding-left: 76px;
+
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    transition: all 0.3s;
+}
+.input{
+    width: 100%;
+    position: relative;
+}
+
+.input-image{
+    background: #ffffff;
+    position: absolute;
+    z-index: 3;
+    height: 100%;
+    width: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px 0px 0px 4px;
+    border: 1px solid #cfcfcf;
+}
+.image{
+    width: 40px;
+    height: 40px;
+}
+
+.form-input:focus {
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+}
+.form-item:last-child{
+    margin-bottom: 0;
+}
+
+.form-action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.action-button{
+    width: 231px;
+    height: 36px;
+    border-radius: 4px;
+    background: #287ac1;
+    border: 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.3s;
+    margin: 0 auto;
+}
+.action-button:hover{
+    color: #cfcfcf;
+    background: #225483;
+}
+
+.input-eye, .input-crossed{
+    position: absolute;
+    z-index: 10;
+    width: 64px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.eye, .eye-crossed{
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s;
+}
+.input-eye:hover .eye, .input-crossed:hover .eye-crossed{
+    opacity: 60%;
+}
+.image{
+    mask-image: url('../images/padlock.svg');
+}
+.register-form{
+    width: 80%;
+}
+
+@media screen and (max-width: 570px) {
+    body{
+        padding: 0 10px;
+    }
+    .register-title{
+        font-size: 28px;
+    }
+
+    .register-form{
+        width: 90%;
+    }
+    .form-item{
+        align-items: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .register-title{
+        font-size: 26px;
+    }
+}
